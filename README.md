@@ -54,13 +54,14 @@ Please follow the [installation](#installation) procedure and then run the follo
 
 ```ruby
 # Load the gem
-require 'openapi_client'
+require 'frcrules'
 
 api_instance = OpenapiClient::GetRuleApi.new
 rule_id = 'rule_id_example' # String | Rule ID to get
+ruleset = 'ruleset_example' # String | The ruleset to look up the rule from.
 
 begin
-  result = api_instance.get_rule(rule_id)
+  result = api_instance.get_rule(rule_id, ruleset)
   p result
 rescue OpenapiClient::ApiError => e
   puts "Exception when calling GetRuleApi->get_rule: #{e}"
@@ -74,8 +75,8 @@ All URIs are relative to *https://frcrules.herokuapp.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*OpenapiClient::GetRuleApi* | [**get_rule**](docs/GetRuleApi.md#get_rule) | **GET** /rule/{rule_id} | 
-*OpenapiClient::GetRuleListApi* | [**get_rules**](docs/GetRuleListApi.md#get_rules) | **GET** /rules | 
+*OpenapiClient::GetRuleApi* | [**get_rule**](docs/GetRuleApi.md#get_rule) | **GET** /rule/{ruleset}/{rule_id} | 
+*OpenapiClient::GetRuleListApi* | [**get_rules**](docs/GetRuleListApi.md#get_rules) | **GET** /rules/{ruleset} | 
 
 
 ## Documentation for Models
