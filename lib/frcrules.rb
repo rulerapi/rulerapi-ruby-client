@@ -11,16 +11,16 @@ OpenAPI Generator version: 4.3.0
 =end
 
 # Common files
-require 'openapi_client/api_client'
-require 'openapi_client/api_error'
-require 'openapi_client/version'
-require 'openapi_client/configuration'
+require 'frcrules/api_client'
+require 'frcrules/api_error'
+require 'frcrules/version'
+require 'frcrules/configuration'
 
 # Models
 
 # APIs
-require 'openapi_client/api/get_rule_api'
-require 'openapi_client/api/get_rule_list_api'
+require 'frcrules/api/get_rule_api'
+require 'frcrules/api/get_rule_list_api'
 
 module OpenapiClient
   class << self
