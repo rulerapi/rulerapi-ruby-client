@@ -13,7 +13,7 @@ OpenAPI Generator version: 4.0.0-beta3
 =end
 
 $:.push File.expand_path("../lib", __FILE__)
-require "openapi_client/version"
+require "frcrules/version"
 
 Gem::Specification.new do |s|
   s.name        = "frcrules"
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI-Generator"]
   s.email       = [""]
-  s.homepage    = "https://openapi-generator.tech"
+  s.homepage    = "https://github.com/rulerapi"
   s.summary     = "Ruler API Ruby Gem"
   s.description = "Ruler API is a flexible API for rules. Originally designed for FIRST Robotics Competition, it is flexible in nature to allow for any program to use it."
   s.license     = "Unlicense"
